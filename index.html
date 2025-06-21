@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .outter-container{
+       display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inner-container{
+      display: grid;
+      grid-template-columns: 329px 207px 162px 50px;
+      grid-template-rows: 423px 140px 155px 29px;
+      gap: 0px;
+      width: 748px;
+      height: 748px;
+
+    }
+
+    .box-1{
+      background-color: red;
+      border: 9px solid black;
+      border-width: 0px 9px 9px 0px;
+    }
+
+    .box-2{
+      background-color: beige;
+      border: 9px solid black;
+      border-width: 0px 0px 9px 0px;
+      grid-column: 3 span;
+    }
+
+    .box-3{
+      background-color: beige;
+      border: 9px solid black;
+      border-width: 0px 9px 9px 0px;
+      grid-row: span 2;
+    }
+
+    .box-4{
+      background-color: beige;
+      border: 9px solid black;
+      border-width: 0px 9px 9px 0px;
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .box-5{
+      background-color: blue;
+      border: 9px solid black;
+      border-width: 0px 0px 10px 0px;
+    }
+
+    .box-6{
+      background-color: beige;
+      grid-row: span 2;
+    }
+
+    .box-7{
+      background-color: beige;
+      border: 9px solid black;
+      border-width: 0px 9px 0px 0px;
+    }
+
+    .box-8{
+      background-color: yellow;
+      border: 9px solid black;
+      border-width: 0px 9px 0px 0px;
+    }
+
+    .box-9{
+      background-color: grey;
+      border: 9px solid black;
+      border-width: 0px 9px 0px 0px;
+    }
+  </style>
+</head>
+
+<body>
+   <div class="outter-container">
+    <div class="inner-container">
+     <div class="box-1"></div>
+     <div class="box-2"></div>
+     <div class="box-3" ></div>
+     <div class="box-4"></div>
+     <div class="box-5"></div>
+     <div class="box-6"></div>
+     <div class="box-7"></div>
+     <div class="box-8"></div>
+     <div class="box-9"></div>
+     </div>
+  </div>
+     
+     
+     
+</body>
+
+</html>
